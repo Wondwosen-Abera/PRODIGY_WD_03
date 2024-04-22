@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic-Tac-Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="header">Tic-Tac-Toe 🎮🕹️</h1>
+    <div id="game-board">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+    <div id="controls">
+      <button id="single-player-btn">Single Player</button>
+      <button id="multi-player-btn">Multi Player</button>
+      <button id="restart-btn">Restart</button>
+      <div id="selection">
+        <label for="player1-choice">Player 1:</label>
+        <select id="player1-choice">
+          <option value="X">X</option>
+          <option value="O">O</option>
+        </select>
+        <label for="player2-choice">Player 2:</label>
+        <select id="player2-choice">
+          <option value="O">O</option>
+          <option value="X">X</option>
+        </select>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

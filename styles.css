@@ -1,0 +1,124 @@
+/* General styles */
+body {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f8ff;
+}
+
+h1 {
+  color: #4b0082;
+  margin: 20px 0;
+}
+
+/* Game board styles */
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  margin: 0 auto; /* Center the game board */
+}
+
+/* Game cell styles */
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #4b0082;
+  font-size: 48px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #4b0082;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Cell hover effect */
+.cell:hover {
+  background-color: #e6e6fa;
+}
+
+/* Control panel styles */
+#controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Button styles */
+button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #4b0082;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+button:hover {
+  background-color: #6a5acd;
+}
+
+/* Selection styles */
+#selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Label and select styles */
+label {
+  margin-right: 5px;
+}
+
+select {
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  border: 1px solid #4b0082;
+  margin-right: 10px;
+}
+
+/* Layout adjustments for smaller screens */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  #game-board {
+    grid-template-columns: repeat(3, 60px);
+    grid-template-rows: repeat(3, 60px);
+    gap: 5px;
+  }
+
+  .cell {
+    font-size: 32px;
+  }
+
+  #controls {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  select {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
